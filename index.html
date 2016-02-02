@@ -5,20 +5,15 @@
 </head>
 <body>
 <p>IE Mode = <script>document.write(document.documentMode);</script></p>
-<button id="btnPopup">Pop up!</button>
+<button onclick="openPopup()">Pop up!</button>
 <script>
-  document
-    .getElementById('btnPopup')
-    .addEventListener(
-      'click',
-      function() {
-        window.open(
-          window.location.href,
-          'IE Mode Popup',
-          'height=300,width=300'
-        );
-      },
-      false);
+  function openPopup() {
+    window.open(
+      window.location.href,
+      'IE Mode Popup',
+      'height=300,width=300'
+    );
+  }
 </script>
 </body>
 </html>
